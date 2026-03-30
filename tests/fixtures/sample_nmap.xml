@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nmaprun>
+  <host>
+    <status state="up"/>
+    <address addr="192.168.1.10" addrtype="ipv4"/>
+    <address addr="A8:BB:CC:DD:EE:FF" addrtype="mac" vendor="Dell"/>
+    <hostnames>
+      <hostname name="office-laptop"/>
+    </hostnames>
+    <ports>
+      <port protocol="tcp" portid="443">
+        <state state="open"/>
+        <service name="https" product="nginx"/>
+      </port>
+    </ports>
+  </host>
+  <host>
+    <status state="up"/>
+    <address addr="192.168.1.99" addrtype="ipv4"/>
+    <address addr="02:11:22:33:44:55" addrtype="mac" vendor="Unknown"/>
+    <hostnames>
+      <hostname name="rogue-hotspot"/>
+    </hostnames>
+    <ports>
+      <port protocol="tcp" portid="22">
+        <state state="open"/>
+        <service name="ssh" product="OpenSSH"/>
+      </port>
+      <port protocol="tcp" portid="80">
+        <state state="open"/>
+        <service name="http" product="lighttpd"/>
+      </port>
+    </ports>
+  </host>
+</nmaprun>

@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+.codex/
+tests/_tmp/
+reports/
+baseline/approved_devices.json
